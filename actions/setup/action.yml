@@ -1,0 +1,15 @@
+name: 'IMS Tools'
+description: 'Execute commands via IMS Tools'
+inputs:
+  tools-version:  # id of input
+    description: 'Version of ims tools to use, defaults to latest'
+    required: true
+    default: 'latest'
+  tools-path:
+    description: Path to install ims tools
+    required: true
+    default: ./deploy/tools/ims
+runs:
+  using: "composite"
+  steps:
+    
